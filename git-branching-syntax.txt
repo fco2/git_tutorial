@@ -1,0 +1,17 @@
+// Branching syntax.
+
+//The HEAD pointer always points to the last commit in the master branch or given branch.
+
+master
+84c46a|--|cce979|--|
+         -------
+           HEAD
+           
+master
+84c46a|--|cce979|--|f36de4|--|
+                   -------
+                    HEAD
+                    
+                    
+chuka$ git branch  #lists all branches
+
