@@ -3,3 +3,4 @@
 
 2. HEAD ~> the last most recent commit of the branch we are currently on.
 
+3. git flow ~> Make a change / stage the change / commit the change with a message / push the change.

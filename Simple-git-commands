@@ -4,5 +4,11 @@
  
  chuka$ git remote add origin file:///home/chuka/Desktop/Git-tutorial/   #adding local remote folder.
  
- chuka$ gt ls-tree HEAD  #shows all the trees and blobs under the last commit branch.
+ chuka$ git ls-tree HEAD  #shows all the trees and blobs under the last commit branch.
+ 
+ chuka$ git log --since=2019-04-15  #looking forward.
+ 
+ chuka$ git log --until=2019-04-15  #looking backward.
+ 
+ chuka$ git log
 
