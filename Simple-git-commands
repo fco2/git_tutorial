@@ -1,0 +1,8 @@
+ // We are going to learn about branching, merging and remotes; navigating commit trees, stashing and setting up a remote.
+ 
+ chuka$ git log #shows the commits made so far on branch 
+ 
+ chuka$ git remote add origin file:///home/chuka/Desktop/Git-tutorial/   #adding local remote folder.
+ 
+ chuka$ gt ls-tree HEAD  #shows all the trees and blobs under the last commit branch.
+
