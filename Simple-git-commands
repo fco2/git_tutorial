@@ -11,4 +11,8 @@
  chuka$ git log --until=2019-04-15  #looking backward.
  
  chuka$ git log
+ 
+ chuka$ git push --set-upstream origin master  #used to push to local file repository
+ 
+ chuka$ git log --oneline
 

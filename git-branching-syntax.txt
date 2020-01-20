@@ -15,3 +15,6 @@ master
                     
 chuka$ git branch  #lists all branches
 
+chuka$ git branch CHUKA_01_a  #creating a simple branch.
+
+chuka$ git checkout CHUKA_01_a  #switch to a feature branch from the master branch or current branch.
