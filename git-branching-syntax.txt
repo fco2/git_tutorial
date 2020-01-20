@@ -15,6 +15,8 @@ master
                     
 chuka$ git branch  #lists all branches
 
-chuka$ git branch CHUKA_01_a  #creating a simple branch.
+chuka$ git checkout -b CHUKA_01_b  #create branch and checkout the branch in one line.
 
-chuka$ git checkout CHUKA_01_a  #switch to a feature branch from the master branch or current branch.
+chuka$ git checkout <file name>  #this will undo changes in the current branch and overwrite them with changes in the master branch.
+
+chuka$ git checkout master git-branching-syntax.txt  # explained above
