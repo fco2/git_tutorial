@@ -23,3 +23,12 @@ chuka$ git checkout master git-branching-syntax.txt  # explained above
 
 chuka$ git diff CHUKA_01_a..master   # gives difference between two branches.
 
+chuka$ git branch -m lovely_tutorial  # renaming/move a branch. You have to be on that branch to do this, or syntax is git branch -m <old branch name> <new branch name>
+
+chuka$ git branch -d branch_to_delete  # delete a branch 
+
+
+
+
+
+
