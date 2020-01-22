@@ -15,4 +15,6 @@
  chuka$ git push --set-upstream origin master  #used to push to local file repository
  
  chuka$ git log --oneline
+ 
+ chuka$ git log --graph --all --oneline --decorate  # to show the graph of how things are merged.
 

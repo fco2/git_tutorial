@@ -6,3 +6,5 @@
 3. git flow ~> Make a change / stage the change / commit the change with a message / push the change.
 
 4. git branching
+
+5. git merge 
