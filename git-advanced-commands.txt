@@ -14,3 +14,13 @@ chuka$ git stash apply stash@{0}   # this does above, but does not delete the st
 chuka$ git stash drop stash@{0}  # deletes a given stash 
 
 chuka$ git stash clear  # delete all items from stash, or all stashes.
+
+chuka$ git remote add origin git@github.com:fco2/git_tutorial.git  # this adds a remote origin url.
+
+chuka$ git remote -v  # this shows the list of remotes repositories.
+
+chuka$ git remote set-url origin git@github.com:fco2/git_tutorial.git   # this replaces the existing origin with thie one.
+
+chuka$ git remote -rm origin  # deletes origin url.
+
+chuka$ git commit --amend -m "New message"  # to amend commits
