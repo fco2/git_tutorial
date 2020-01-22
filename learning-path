@@ -8,3 +8,4 @@
 4. git branching
 
 5. git merge 
+    a. You can merge from master into your feature branch, just go into your feature branch and do a "git merge master".
