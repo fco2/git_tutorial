@@ -27,6 +27,10 @@ chuka$ git branch -m lovely_tutorial  # renaming/move a branch. You have to be o
 
 chuka$ git branch -d branch_to_delete  # delete a branch 
 
+chuka$ git merge child_branch  # you must be on either master or parent branch to execute this command, and must have committed child_branch changes.
+
+
+
 
 
 
