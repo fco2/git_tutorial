@@ -1,0 +1,7 @@
+(1.) Do a git merge with conflicts. Resolve conflicts.
+
+(2.) Do a git stash and switch branches. Pop, apply and save a stash.
+
+(3.) Learn git reset, soft mixed and hard.
+
+(4.) 

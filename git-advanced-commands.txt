@@ -1,0 +1,16 @@
+To not commit work but save for later use so you can switch branches, do this
+chuka$ git stash save "what I did on stash"
+
+# git stash does not include untracked files.
+
+chuka$ git stash list   # lists all your stashes
+
+chuka$ git stash show -p stash@{0}   #  shows you all the changes in a given stash .. This --> stash@{0} is gotten after listing the stash
+
+chuka$ git stash pop stash@{0}   #  this removes a stash from the stack and applies it to the given branch. It is no longer in the stash.
+
+chuka$ git stash apply stash@{0}   # this does above, but does not delete the stash from the stack.
+
+chuka$ git stash drop stash@{0}  # deletes a given stash 
+
+chuka$ git stash clear  # delete all items from stash, or all stashes.
