@@ -17,4 +17,11 @@
  chuka$ git log --oneline
  
  chuka$ git log --graph --all --oneline --decorate  # to show the graph of how things are merged.
+ 
+ # How to resolve merge conflicts: 
+ (1.) Do git merge --> it will say conflict, just go into file
+ (2.) type "git show --color-words" in the command line console. It will show you the differences.
+ (3.) Edit the file in question, save what needs to be saved and discard what needs to be discarded, then hit Save.
+ (4.) Do a git add <file_name>.
+ (5.) Do a git commit # No need for a commit message here... and it will continue merge for you.
 
