@@ -9,3 +9,7 @@
 
 5. git merge 
     a. You can merge from master into your feature branch, just go into your feature branch and do a "git merge master".
+
+6. Performing git stash
+
+7. Performing git reset + git push -u with tracking.
