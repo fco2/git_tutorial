@@ -11,7 +11,7 @@ chuka$ git stash pop stash@{0}   #  this removes a stash from the stack and appl
 
 chuka$ git stash apply stash@{0}   # this does above, but does not delete the stash from the stack.
 
-chuka$ git stash drop stash@{0}  # deletes a given stash 
+chuka$ git stash drop 0  # deletes a given stash say stash@{0}
 
 chuka$ git stash clear  # delete all items from stash, or all stashes.
 
