@@ -24,3 +24,30 @@ chuka$ git remote set-url origin git@github.com:fco2/git_tutorial.git   # this r
 chuka$ git remote -rm origin  # deletes origin url.
 
 chuka$ git commit --amend -m "New message"  # to amend commits
+
+Notes: git reset
+************************************************************
+chuka$ git reset --soft a8731q4  #moves HEAD pointer to commit a8731q4 and undos your last commit from that branch and puts your changes back in staging index.
+
+chuka$ git commit -m "Bla bla"
+# last two commit lines can be replaced with below line 
+
+chuka$ git commit --amend -m "Bla bla"
+************************************************************
+chuka$ git reset --mixed HEAD~   # this sets commit back to before your last git add. So it unstages your commits.
+
+chuka$ git reset --hard HEAD~  #this undoes your last commit, sets HEAd pointer to previous commit, n loses all changes in the staging index and working directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
