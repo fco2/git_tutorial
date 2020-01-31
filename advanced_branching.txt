@@ -1,0 +1,127 @@
+git tags are used to mark important points in our commits, usually released like v1.0, v2.1 etc.
+
+#lightweight tag 
+chuka$ git tag myIssue1234 14a49c7  # this 14a49c7 is representing a commit SHA
+
+#annotated tags
+#below, Version 1 is the annotation or message, v1.0 is the name of the tag,
+chuka$ git tag -am "Version 1" v1.0 14a49c7  # If you ommit the sha, git will assume you want to tag the current HEAD.
+
+chuka$ git tag --list  # or git tag -l to list your tags.
+
+chuka$ git diff v1.0..v1.2
+
+chuka$ git tag -d v1.1   # delete a tag.
+
+chuka$ git tag -ln  # lists all your annotated tags with the messages.
+
+# To push a remote branch that is not master, do:
+chuka$ git push origin branch_name
+
+# To push a tag, is the same syntax:
+chuka$ git push origin v0.1
+
+chuka$ git push origin --tags  #push all tags to remote branch.
+
+# We delete remote tags the same way we delete remote branches.
+chuka$ git push origin :branch_name   # better to use "git push -d origin remote_branch
+
+chuka$ git push -d origin v1.1
+
+
+Next up: Interactive staging.
+*************************************
+
+Next up: Creating and applying diff patches.
+**********************************************
+chuka$ git apply xxx.diff   # to apply a patch 
+
+
+Next up: Rebasing
+**********************************************
+Rebase the new commits in new feature off of master
+
+# to rebase my_good_branch, you switch to that branch, then type:
+chuka$ git rebase master
+OR
+
+chuka$ git rebase master my_good_branch  # this moves my brancch my_good_branch to the tip of master.
+
+chuka$ git merge-base master my_good_branch
+
+# Merge my_good_branch back into master thats why you have to be on master then call git merge <branch you want to merge>
+
+chuka$ git rebase --continue  # after resolving rebase conflicts, but first, do a git add <file_name> *** VERY IMPORTANT **
+
+chuka$ git rebase --skip  # this will discard changes in your local repo
+
+REBASE Visually
+********************************
+
+67eadd5 -> 4491rg1 ->4e1e155_-> ec77767 -> [master branch]
+                            \
+                             \
+                              2d1991d (key_feature branch) -> b30a092 -> 
+                              
+With rebase, it moves the commit 2d1991d to point to master branch as shown below
+
+67eadd5 -> 4491rg1 ->4e1e155_-> ec77767 -> [master branch]
+                                                        \
+                                                         \
+                                                          2d1991d (key_feature branch) -> b30a092 -> 
+                                                        
+Syntax#
+
+chuka$ git rebase master key_feature  # this will check out key_feature and then do the rebase for each commit going back up to the last branch from master.
+
+RULE OF THUMB FOR ANY CONFLICTS, DO A GIT STATUS FIRST.
+
+chuka$ git rebase --onto master camping expenses 
+# Above -> we are moving expenses branch, the upstream or where it branched from is the camping branch, and we want to make expenses based off of the latest commit of master.
+
+
+# Undo rebase - avoid if possible since rebase is a destructive process and the SHA-1 are changed.
+chuka$ git reset --hard ORIG_HEAD  # will work if you have not done a second rebase on top the one you are trying to undo. 
+
+
+Interactive Rebase (pick, drop commit, edit commit, squash commit)
+******************************
+chuka$ git rebase -i master camping  # moving camping and its based off of master.
+
+
+SQUASHING COMMITS  -- Fold two or more commits into one, and /or concat commit message
+********************************
+chuka$ git rebase -i HEAD~3   # last 3 commits. you want to type squash from where you want to squash till the top of the list.
+
+GIT LOG
+*********************
+
+chuka$ git log -p  # -p or --patch showing changes between last two commit. You can do simple git log.
+
+chuka$ git clame shopping.java   # who did this commit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
